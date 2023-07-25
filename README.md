@@ -1,1 +1,33 @@
-# Crowdfunding_ETL
+# Crowdfunding ETL Project
+
+A collaborative project to build an ETL pipeline using Python, Pandas, and PostgreSQL for extracting, transforming, and loading crowdfunding data from Excel files into a relational database.
+
+## Background
+
+In this project, I practiced building an ETL pipeline to process crowdfunding data from Excel files. I extracted and transformed the data, created four CSV files, and then used the CSV files to create an Entity Relationship Diagram (ERD) and a table schema. Finally, I loaded the CSV files into a PostgreSQL database.
+
+## Features
+
+- Extract and transform crowdfunding and contact data from Excel files
+- Create and export Category, Subcategory, Campaign, and Contact DataFrames as CSV files
+- Design an ERD and table schema for the database using 
+- Create and populate PostgreSQL database tables
+
+## Usage
+
+1. Run the Jupyter Notebook to extract and transform data, and create CSV files.
+2. Use the provided `crowdfunding_db_schema.sql` file to create tables in the PostgreSQL database.
+3. Load the CSV files into the corresponding PostgreSQL tables.
+4. Query the database to verify the data has been loaded correctly.
+
+## Built With
+
+- Python
+- Pandas
+- PostgreSQL
+- Jupyter Notebook
+- Excel
+
+## Note:
+
+While importing data in POSTGREsql please import the data of contacts,category, subcatgory data before importing campaign data as there are fields in campaign data that are foreign keys to these tables. In case you import data in campaing before you import data of other tables. You will get an error.
