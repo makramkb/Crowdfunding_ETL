@@ -27,3 +27,7 @@ In this project, I practiced building an ETL pipeline to process crowdfunding da
 - PostgreSQL
 - Jupyter Notebook
 - Excel
+
+## Note:
+
+While importing data in POSTGREsql please import the data of contacts,category, subcatgory data before importing campaign data as there are fields in campaign data that are foreign keys to these tables. In case you import data in campaing before you import data of other tables. You will get an error.
